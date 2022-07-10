@@ -1,0 +1,123 @@
+section {
+   display: flex;
+}
+
+div {
+   width: 40vw;
+   padding: 10px;
+   margin: 0 auto;
+   margin-top: 5%;
+   text-align: center;
+   border-radius: 5px;
+   background: white;
+   box-shadow: 0 3px 10px 0px rgb(160, 0, 0);
+}
+
+div#adder{
+   min-height: 45vh;
+   max-height: 45vh;
+}
+
+div#todo-list{
+   overflow: scroll;
+   overflow-x: hidden;
+   min-height: 45vh;
+   max-height: 70vh;
+}
+
+div#cards{
+   width: 80%;
+   max-height: 10%;
+   text-align: left;
+   background: linear-gradient(30deg, #D4145A, #FBB03B);
+   box-shadow: 0 3px 5px -3px black;
+   transition: .7s;
+   font-style: italic;
+   font-family: cursive;
+   font-weight: 700;
+   font-size: 18px;
+}
+div#cards:hover{
+   background: #FBB03B;
+}
+
+::-webkit-scrollbar {
+   width: 6px;
+}
+::-webkit-scrollbar-track {
+   background: #f1f1f1;
+   border-radius: 5px;
+}
+::-webkit-scrollbar-thumb {
+   background: #D4145A;
+}
+::-webkit-scrollbar-thumb:hover {
+   background: #555;
+}
+
+h2 {
+   text-shadow: 0 0 3px #D4145A, 0 0 5px #FBB03B ;
+   margin-bottom: 4%;
+}
+
+h3 {
+   position: sticky;
+   top: -10px;
+   padding: 10px;
+   background: white;
+   border-bottom: #D4145A;
+   border-bottom-width: 5px;
+   border-bottom-style: solid;
+}
+
+input {
+   height: 40px;
+   width: 90%;
+   font-size: large;
+   font-style: italic;
+   border-radius: 5px;
+   margin-bottom: 20px;
+   box-shadow: 0 3px 5px -3px black;
+}
+
+label {
+   text-shadow: 0 0 1px black;
+   color:#D4145A; 
+   font-weight: 600;
+}
+
+.item {
+   background-color: #FBB03B;
+   border-radius: 5px;
+   padding: 5px;
+   font-weight: 600;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   font-style: normal;
+   cursor: pointer;
+}
+.item:hover {
+   background-color: #f74003;
+}
+
+button {
+   height: 40px;
+   width: 51%;
+   border-radius: 5px;
+   margin: 20px 0;
+   background-color: #D4145A;
+   box-shadow: 0 3px 5px -3px black;
+   border: none;
+   color: #FBB03B;
+   font-size: 18px;
+   font-weight: 600;
+}
+
+button:hover {
+   background-color: #7a022e;
+   color: #fddfad;
+   width: 50%;
+   height: 37px;
+   margin-top: 25px;
+   transition: .2s;
+}
+

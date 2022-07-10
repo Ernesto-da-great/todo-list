@@ -1,0 +1,22 @@
+<section>
+   <div id="adder">
+      <h2>
+         Welcome, {{name}}!
+      </h2>
+      <label for="reminder">Add Reminder</label><br>
+      <input [(ngModel)]="task" id="reminder" type="text" placeholder="Doctors appointement by 9am" autofocus><br>
+
+      <label for="time">Add time</label><br>
+      <input [(ngModel)]="time" id="time" type="time" placeholder="9am"><br>
+
+      <button *ngIf="!isEdit" type="button" value="submit" (click)="addTask()">ADD TASK</button>
+      <button *ngIf="isEdit" type="button" value="submit" (click)="updateTask()">UPDATE TASK</button>
+   </div>
+   <div id="todo-list">
+      <h3>Your Reminders will be added here</h3>
+      
+      <div id="cards" *ngFor="let task of tasks; let i = index" (click)="editTask(task)">
+         <span class="item" (click)="deleteItem(i)">&#x274C;</span> {{ task.task }} - <span class="item"> {{ task.time }}</span>
+      </div>
+   </div>
+</section>

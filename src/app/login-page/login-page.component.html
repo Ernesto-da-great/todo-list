@@ -1,0 +1,11 @@
+<div>
+   <h1>
+     Welcome to <span>PlanGo</span>
+   </h1>
+ 
+   <form>
+     <input [(ngModel)]="username" type="text" name="username" placeholder="Full name" required><br>
+     <input [(ngModel)]="password" type="password" name="password" placeholder="Password - 123" required><br>
+     <button type="button" (click)="checker()" [routerLink]="_link">LOGIN</button>
+   </form>
+ </div>
